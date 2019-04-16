@@ -1,6 +1,7 @@
 package pl.coderslab;
 
 import pl.coderslab.games.FindNumber;
+import pl.coderslab.games.FindNumber2;
 import pl.coderslab.games.LOTTOGame;
 import pl.coderslab.services.ScannerService;
 
@@ -20,6 +21,7 @@ public class Main {
         System.out.println("Hello,choose game!");
         System.out.println("1.findNumber");
         System.out.println("2.LOTTOGame");
+        System.out.println("3.findNumber2");
 
         for(;;) {
 
@@ -32,6 +34,10 @@ public class Main {
                     }
                     case 2:{
                         LOTTOGame.lottoGame();
+                        break;
+                    }
+                    case 3:{
+                        FindNumber2.findNumber2();
                         break;
                     }
                 }
