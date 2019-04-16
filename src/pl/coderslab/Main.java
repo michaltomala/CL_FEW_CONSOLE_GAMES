@@ -28,6 +28,7 @@ public class Main {
                         FindNumber.findNumber();
                         break;
                 }
+                break;
             }
         }
     }

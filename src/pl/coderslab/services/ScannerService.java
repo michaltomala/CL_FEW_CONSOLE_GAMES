@@ -1,5 +1,6 @@
 package pl.coderslab.services;
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class ScannerService {
@@ -20,13 +21,19 @@ public class ScannerService {
     static public int getInt(String errorText){
         Scanner scan = new Scanner(System.in);
 
-        while (!scan.hasNextInt()){
-            scan.next();
+        while (!scan.hasNextInt() ){
+            try{
+                scan.next();
+
+            }catch(NoSuchElementException e){
+                System.out.println("Prechwyciłem!");
+            }
             System.out.println(errorText);
         }
 
         return scan.nextInt();
     }
+
 
     static public double getDouble(String promptText, String errorText){
         Scanner scan = new Scanner(System.in);
