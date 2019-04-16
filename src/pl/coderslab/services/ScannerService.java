@@ -5,10 +5,21 @@ import java.util.Scanner;
 public class ScannerService {
 
 
-    static public int getInt(String promptText, String errorText){
+    static public char getChar(String errorText){
         Scanner scan = new Scanner(System.in);
 
-        System.out.println(promptText);
+        while(true){
+            String choice  = scan.next();
+            if(choice.length()==1) return choice.charAt(0);
+            else System.out.println(errorText);
+        }
+
+    }
+
+
+    static public int getInt(String errorText){
+        Scanner scan = new Scanner(System.in);
+
         while (!scan.hasNextInt()){
             scan.next();
             System.out.println(errorText);
