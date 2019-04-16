@@ -1,20 +1,9 @@
 package pl.coderslab.games;
 
-import pl.coderslab.services.ScannerService;
 
 import java.util.Random;
 import java.util.Scanner;
 
-/**
- * Gra w zgadywanie liczb
- * Napisz prostą grę w zgadywanie liczb. Komputer ma wylosować liczbę w zakresie od 1 do 100. Następnie:
- *
- * wypisać: "Zgadnij liczbę" i pobrać liczbę z klawiatury;
- * sprawdzić, czy wprowadzony napis, to rzeczywiście liczba i w razie błędu wyświetlić komunikat: "To nie jest liczba", po czym wrócić do pkt. 1;
- * jeśli liczba podana przez użytkownika jest mniejsza niż wylosowana, wyświetlić komunikat: "Za mało!", po czym wrócić do pkt. 1;
- * jeśli liczba podana przez użytkownika jest większa niż wylosowana, wyświetlić komunikat: "Za dużo!", po czym wrócić do pkt. 1;
- * jeśli liczba podana przez użytkownika jest równa wylosowanej, wyświetlić komunikat: "Zgadłeś!", po czym zakończyć działanie programu.
- */
 
 public class FindNumber{
 
