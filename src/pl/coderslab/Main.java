@@ -3,6 +3,7 @@ package pl.coderslab;
 import pl.coderslab.games.FindNumber;
 import pl.coderslab.games.FindNumber2;
 import pl.coderslab.games.LOTTOGame;
+import pl.coderslab.games.TicTacToe;
 import pl.coderslab.services.ScannerService;
 
 import java.util.HashSet;
@@ -40,6 +41,10 @@ public class Main {
                         FindNumber2.findNumber2();
                         break;
                     }
+                    case 4:{
+                        TicTacToe.ticTacToe();
+                        break;
+                    }
                 }
                 break;
             }
@@ -53,6 +58,7 @@ public class Main {
         gameNumbers.add(1);
         gameNumbers.add(2);
         gameNumbers.add(3);
+        gameNumbers.add(4);
 
         if(!gameNumbers.contains(choice)){
             System.out.println("Game doesn't exist,try again !");
