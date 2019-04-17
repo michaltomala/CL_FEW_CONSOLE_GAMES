@@ -52,6 +52,7 @@ public class Main {
         HashSet<Integer> gameNumbers = new HashSet<>();
         gameNumbers.add(1);
         gameNumbers.add(2);
+        gameNumbers.add(3);
 
         if(!gameNumbers.contains(choice)){
             System.out.println("Game doesn't exist,try again !");
