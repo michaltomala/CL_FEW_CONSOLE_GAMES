@@ -1,9 +1,6 @@
 package pl.coderslab;
 
-import pl.coderslab.games.FindNumber;
-import pl.coderslab.games.FindNumber2;
-import pl.coderslab.games.LOTTOGame;
-import pl.coderslab.games.TicTacToe;
+import pl.coderslab.games.*;
 import pl.coderslab.services.ScannerService;
 
 import java.util.HashSet;
@@ -23,6 +20,8 @@ public class Main {
         System.out.println("1.findNumber");
         System.out.println("2.LOTTOGame");
         System.out.println("3.findNumber2");
+        System.out.println("4.TicTacToe");
+        System.out.println("5.Dice");
 
         for(;;) {
 
@@ -45,6 +44,9 @@ public class Main {
                         TicTacToe.ticTacToe();
                         break;
                     }
+                    case 5:{
+                        Dice.dice();
+                    }
                 }
                 break;
             }
@@ -59,6 +61,7 @@ public class Main {
         gameNumbers.add(2);
         gameNumbers.add(3);
         gameNumbers.add(4);
+        gameNumbers.add(5);
 
         if(!gameNumbers.contains(choice)){
             System.out.println("Game doesn't exist,try again !");
