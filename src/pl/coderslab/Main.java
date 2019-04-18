@@ -22,6 +22,7 @@ public class Main {
         System.out.println("3.findNumber2");
         System.out.println("4.TicTacToe");
         System.out.println("5.Dice");
+        System.out.println("6.WebSearch");
 
         for(;;) {
 
@@ -47,6 +48,9 @@ public class Main {
                     case 5:{
                         Dice.dice();
                     }
+                    case 6:{
+                        WebSearch.webSearch();
+                    }
                 }
                 break;
             }
@@ -62,6 +66,7 @@ public class Main {
         gameNumbers.add(3);
         gameNumbers.add(4);
         gameNumbers.add(5);
+        gameNumbers.add(6);
 
         if(!gameNumbers.contains(choice)){
             System.out.println("Game doesn't exist,try again !");
